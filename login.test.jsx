@@ -1,6 +1,6 @@
 import React from 'react'
 import {renderIntoDocument, cleanup} from 'react-testing-library'
-import {Login} from '../login'
+import {Login} from './login'
 
 afterEach(cleanup)
 
