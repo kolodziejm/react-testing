@@ -1,13 +1,12 @@
 import React from 'react'
 
-function Login({onSubmit}) {
-return (
+const Login = props => (
 <div>
 <form
 onSubmit={e => {
 e.preventDefault()
 const {username, password} = e.target.elements
-onSubmit({
+props.onSubmit({
 username: username.value,
 password: password.value,
 })
@@ -22,6 +21,5 @@ password: password.value,
 </form>
 </div>
 )
-}
 
 export {Login}
