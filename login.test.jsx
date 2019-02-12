@@ -1,5 +1,5 @@
 import React from 'react'
-import {renderIntoDocument, cleanup} from 'react-testing-library'
+import {renderIntoDocument, cleanup} from 'react-testing-library' // zamiennik enzyme
 import {Login} from './login'
 
 afterEach(cleanup)
